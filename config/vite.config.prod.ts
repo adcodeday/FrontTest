@@ -21,6 +21,14 @@ export default mergeConfig(
       },
       chunkSizeWarningLimit: 2000,
     },
+    server: {
+      port: 9988,
+      open: false, // 自动打开浏览器
+      fs: {
+        strict: true, // 文件读取必须是相对于根目录的绝对路径
+      },
+      https: false, // 关闭https
+    },
   },
   baseConfig,
 )
